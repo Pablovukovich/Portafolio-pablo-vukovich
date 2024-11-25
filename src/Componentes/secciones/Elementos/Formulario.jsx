@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { NotificacionSuccess } from './NotificacionSuccess';
 import { NotificacionError } from './NotificacionError';
-import fondoContacto from '../../../assets/background_contacto.png'
+import fondoContacto from './../../../../public/background_contacto.png'
 
 export const Formulario = () => {
   const form = useRef();
