@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { NotificacionSuccess } from './NotificacionSuccess';
 import { NotificacionError } from './NotificacionError';
+import fondoContacto from './assets/background_contacto.png'
 
 export const Formulario = () => {
   const form = useRef();
@@ -93,7 +94,7 @@ export const Formulario = () => {
     <>
       <div className='flex flex-col flex-1 items-center m-7 relative text-center lg:flex-row'>
         <img
-          src='/background_contacto.png'
+          src={fondoContacto}
           alt="fondo-contacto"
           className='w-72 h-64 rounded-md lg:h-[400px] lg:w-[400px]'
         />
