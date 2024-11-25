@@ -7,11 +7,16 @@ Este repositorio contiene el código fuente de mi portafolio web personal, desar
 Funcionalidades
 
 -Secciones dinámicas: Sobre mí, Skills, Proyectos y Contacto.
+
 -Diseño responsivo y moderno.
+
 -Navegación intuitiva con react-router-dom.
 
+
 Tecnologías utilizadas
+
 -Frontend: React, Tailwind CSS
+
 
 ¡Explora mi portafolio y conoce más sobre mi trabajo! 😊
 
