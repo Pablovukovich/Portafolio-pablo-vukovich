@@ -21,7 +21,7 @@ export const Knews = () => {
         <div className='flex flex-col justify-center items-center '>
           <a href="https://www.instagram.com/knews.bp/" >
               <div className='h-auto w-64 object-cover m-4 ' target="_BLANK">
-                  <img src={ KnewsLogoPrincipal} alt="k new logo" />
+                  <img src={KnewsLogoPrincipal} alt="k new logo" />
               </div>
           </a>
               <div className='h-full w-auto my-3 '>
