@@ -7,7 +7,7 @@ export const Knews = () => {
         <NavBarProyectos/>
         <div className='flex flex-col sm:flex-row justify-center items-center m-10 sm:m-20 '>
             <div className='h-auto w-full sm:w-[50%] object-cover m-4 '>
-                <img src="./public/K-NEW-LOGO.jpg" alt="k new logo" />
+                <img src="/K-NEW-LOGO.jpg" alt="k new logo" />
             </div>
             <div className='h-full w-full mx-1 sm:w-[70%] sm:mx-10 font-roboto'>
               <p className='font-medium text-start text-xl'><span className='text-2xl font-extrabold'>Knews</span> es un proyecto  enfocado principalmente en <span className='text-2xl font-extrabold text-quinto'>Blackpink</span> y 
