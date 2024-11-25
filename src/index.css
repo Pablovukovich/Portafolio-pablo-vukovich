@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background:#FCDDE4;
+}
+
+@keyFrames scroll {
+        0%{
+            transform: translateX(0);
+        }
+
+        100%{
+            transform: translateX(calc(-200px *8 - 0.5rem * 16))
+        }
+}
+
+.animate-scroll{
+    animation: scroll 15s linear infinite;
+    animation-play-state: running;
+}
+
+.paused {
+    animation-play-state: paused; 
+}
+
+
+@keyFrames show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+
+.showAnimacion{
+    view-timeline-name: --section;
+    view-timeline-axis: block;
+
+    animation-timeline: --section;
+    animation-name: show;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+/* Personaliza la barra de desplazamiento */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+    height: 8px; /* Alto de la barra para el desplazamiento horizontal */
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la barra */
+    border-radius: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #170c10; /* Color de la barra */
+    border-radius: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el mouse */
+  }
+  
+
+  @keyframes scaleUp {
+    0%, 100% {
+      width: 6rem; /* w-24 */
+      height: 6rem; /* h-24 */
+    }
+    50% {
+      width: 7rem; /* w-36 */
+      height: 7rem; /* h-36 */
+    }
+  }
