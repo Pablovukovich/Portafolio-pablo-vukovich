@@ -93,7 +93,7 @@ export const Formulario = () => {
     <>
       <div className='flex flex-col flex-1 items-center m-7 relative text-center lg:flex-row'>
         <img
-          src='./public/background_contacto.png'
+          src='/background_contacto.png'
           alt="fondo-contacto"
           className='w-72 h-64 rounded-md lg:h-[400px] lg:w-[400px]'
         />
