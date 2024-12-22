@@ -3,6 +3,7 @@ import skill4 from './../../../public/4-skill.svg'
 import skill3 from './../../../public/3-skill.svg'
 import skill7 from './../../../public/7-skill.svg'
 import skill8 from './../../../public/8-skill.svg'
+
 export const Logo = () => {
   return (
     <>
