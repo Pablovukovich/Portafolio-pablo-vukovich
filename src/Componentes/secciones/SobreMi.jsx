@@ -4,7 +4,7 @@ import { SubTitulos } from './Elementos/SubTitulos';
 export const SobreMi = ({sobreMiSectionRef}) => {
   return (
     <>
-        <section  ref={sobreMiSectionRef} className=' flex flex-col  bg-second justify-center py-10 items-center'>
+        <section  ref={sobreMiSectionRef} className=' flex flex-col  bg-second justify-center py-10 items-center dark:bg-sexto'>
                         <SubTitulos titulo={'SOBRE MI'} />
                         <div className='flex flex-col bg-third p-5 m-5 h-max w-auto items-center rounded-tl-xl rounded-br-xl lg:flex-row lg:p-0 lg:mx-20 showAnimacion'>
                               <div className=' flex w-48 h-auto lg:w-[50%] lg:h-auto  '>

@@ -16,7 +16,7 @@ export const Carrousel = () => {
   };
   return (
     <>
-      <div className='container my-12 bg-second showAnimacion  '>
+      <div className='container my-12 bg-second showAnimacion dark:bg-third '>
         <div className='overflow-hidden w-full shadow-inner '>
           <div  onMouseEnter={handleMouseEnter} //onMouseEnter evento de cursosr sobre elemento 
                 onMouseLeave={handleMouseLeave} //onMouseOver envento sobre el cursos fuera del elemento 

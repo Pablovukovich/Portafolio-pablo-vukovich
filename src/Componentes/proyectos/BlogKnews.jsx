@@ -11,36 +11,36 @@ export const BlogKnews = ({ proyecto }) => {
   return (
     <> 
     
-        <NavBarProyectos/>
-        <section   className='flex flex-col items-center sm:items-center sm:flex-row justify-center h-auto sm:h-screen '>
-        <div className="my-5 mx-14 w-[80%] h-full sm:w-[40%] sm:h-[95%] bg-quarter shadow-2xl relative flex justify-center items-center group ">
+        <NavBarProyectos />
+        <section   className='flex flex-col items-center sm:items-center sm:flex-row justify-center h-auto sm:h-screen dark:bg-sexto '>
+        <div className="my-5 mx-14 w-[80%] h-full sm:w-[40%] sm:h-[95%] bg-quarter shadow-2xl relative flex justify-center items-center group dark:bg-sexto ">
           <img src={proyecto.imagen.src} alt={proyecto.imagen.alt} className="object-cover w-full h-full group-hover:blur-sm transition-all duration-700" />
           <a href="#" className="absolute w-32 h-14 z-10 bg-quinto flex justify-center items-center text-second font-roboto font-bold hover:bg-primary hover:text-third transition-all duration-500  ">VER PROYECTO</a>
         </div>
-            <div className='bg-quarter w-[80%] h-[90%] sm:w-[60%]  mx-10 shadow-2xl relative overflow-y-auto my-2 scrollbar-thin scrollbar-thumb-second scrollbar-track-primary '>
+            <div className='bg-quarter w-[80%] h-[90%] sm:w-[60%]  mx-10 shadow-2xl relative overflow-y-auto my-2 scrollbar-thin scrollbar-thumb-second scrollbar-track-primary  dark:bg-third'>
                 <div className='px-5 py-2  border-b border-third   w-[50%] '>
-                  <h1 className='font-roboto font-bold text-3xl text-third'> {proyecto.titulo}</h1>
+                  <h1 className='font-roboto font-bold text-3xl text-third dark:text-primary'> {proyecto.titulo}</h1>
                 </div>
                 <div className='px-5 py-2  my-2 '>
-                  <h2 className='font-roboto font-normal '>DESCRIPCION</h2>
-                  <p className=''>{proyecto.descripcion}</p>
+                  <h2 className='font-roboto font-normal dark:text-primary '>DESCRIPCION</h2>
+                  <p className='dark:text-quarter'>{proyecto.descripcion}</p>
                   <br />
-                  <span className='font-semibold text-lg'>Características Principales</span>
-                  <p><span className='font-medium '>Secciones de Noticias:</span> Los usuarios podrán navegar por distintas categorías y secciones que agrupan las noticias por temas específicos, como lanzamientos de música, giras, entrevistas exclusivas y colaboraciones.<br/>
-                    <span className='font-medium'>Interacción y Comentarios:</span> Cada publicación permite a los usuarios interactuar mediante comentarios, fomentando una comunidad activa y comprometida dentro del sitio.<br/>
-                    <span className='font-medium'>Artículos en Profundidad y Multimedia:</span> Las noticias y artículos estarán acompañados de contenido visual atractivo, incluyendo imágenes, videos y enlaces interactivos, proporcionando una experiencia rica en contenido. <br/>
-                    <span className='font-medium'>Funcionalidad de Búsqueda y Filtrado:</span>Para facilitar la navegación, los usuarios podrán buscar noticias específicas o filtrar artículos por categoría, fecha o popularidad. <br />
+                  <span className='font-semibold text-lg dark:text-primary'>Características Principales</span>
+                  <p className='dark:text-quarter'><span className='font-medium dark:text-primary '>Secciones de Noticias:</span> Los usuarios podrán navegar por distintas categorías y secciones que agrupan las noticias por temas específicos, como lanzamientos de música, giras, entrevistas exclusivas y colaboraciones.<br/>
+                    <span className='font-medium dark:text-primary'>Interacción y Comentarios:</span> Cada publicación permite a los usuarios interactuar mediante comentarios, fomentando una comunidad activa y comprometida dentro del sitio.<br/>
+                    <span className='font-medium dark:text-primary'>Artículos en Profundidad y Multimedia:</span> Las noticias y artículos estarán acompañados de contenido visual atractivo, incluyendo imágenes, videos y enlaces interactivos, proporcionando una experiencia rica en contenido. <br/>
+                    <span className='font-medium dark:text-primary'>Funcionalidad de Búsqueda y Filtrado:</span>Para facilitar la navegación, los usuarios podrán buscar noticias específicas o filtrar artículos por categoría, fecha o popularidad. <br />
                     </p>
                     <br />
-                    <span className='font-semibold text-lg'>Tecnologías Utilizadas</span>
-                  <p><span className='font-medium'>Frontend:</span> Desarrollado con React y estilizado con Tailwind CSS para garantizar una interfaz intuitiva y una experiencia de usuario fluida. <br />
-                  <span className='font-medium'>Backend:</span> Utiliza Node.js y MongoDB para un backend escalable y eficiente, permitiendo una administración rápida y segura de los datos, tales como publicaciones, comentarios y perfiles de usuario</p>
+                    <span className='font-semibold text-lg dark:text-primary'>Tecnologías Utilizadas</span>
+                  <p className=' dark:text-quarter'><span className='font-medium dark:text-primary'>Frontend:</span> Desarrollado con React y estilizado con Tailwind CSS para garantizar una interfaz intuitiva y una experiencia de usuario fluida. <br />
+                  <span className='font-medium dark:text-primary'>Backend:</span> Utiliza Node.js y MongoDB para un backend escalable y eficiente, permitiendo una administración rápida y segura de los datos, tales como publicaciones, comentarios y perfiles de usuario</p>
                   <br/>
-                  <span className='font-semibold text-lg'>Objetivo</span>
-                  <p>Knews está diseñado para satisfacer la demanda de contenido organizado y accesible para los seguidores de Blackpink y la cultura pop. Este proyecto es una oportunidad para perfeccionar las habilidades de desarrollo full stack, combinando React y Tailwind para el frontend, junto con Node.js y MongoDB para el backend, integrando una experiencia ágil y visualmente atractiva.</p>
+                  <span className='font-semibold text-lg dark:text-primary'>Objetivo</span>
+                  <p className='dark:text-quarter'>Knews está diseñado para satisfacer la demanda de contenido organizado y accesible para los seguidores de Blackpink y la cultura pop. Este proyecto es una oportunidad para perfeccionar las habilidades de desarrollo full stack, combinando React y Tailwind para el frontend, junto con Node.js y MongoDB para el backend, integrando una experiencia ágil y visualmente atractiva.</p>
                 </div>
                 <div className='w-[50%] h-16 px-5 py-2'>
-                  <h3>Tecnologias</h3>
+                  <h3 className='dark:text-primary'>Tecnologias</h3>
                   <div className='flex'>
                   {proyecto.skills.map((skill, index) => (
                     <img key={index} src={skill.src} alt={skill.alt} className='w-16 h-16 my-1  '  />
@@ -48,7 +48,7 @@ export const BlogKnews = ({ proyecto }) => {
                   </div>
                 </div>
                 <div className='w-[50%] h-16 px-5 py-2  my-8'>
-                  <h3>Repositorio</h3>
+                  <h3 className='dark:text-primary'>Repositorio</h3>
                   <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github w-14 h-14 hover:scale-125 transition-all duration-300 text-quinto">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -58,16 +58,16 @@ export const BlogKnews = ({ proyecto }) => {
                 </div>
 
                
-               <Link to={'/knews-info'} className='text-quinto hover:text-black  '>
+               <Link to={'/knews-info'} className='text-quinto hover:text-black  dark:text-primary '>
                
-                <div className='flex flex-row  my-2 bottom-0 left-[60%] sm:left-0    '>
+                <div className='flex flex-row  my-2 bottom-0 left-[60%] sm:left-0  mx-3   '>
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-help w-5 h-5">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                     <path d="M12 17l0 .01" />
                     <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
                   </svg>
-                  <p className='mx-1 text-sm text-third '>¿Que es knews?</p>
+                  <p className=' mx-1 text-sm text-third dark:text-primary '>¿Que es knews?</p>
                 </div>
                
                </Link>

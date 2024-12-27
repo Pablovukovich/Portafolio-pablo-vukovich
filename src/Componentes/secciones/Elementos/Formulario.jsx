@@ -102,7 +102,7 @@ export const Formulario = () => {
           CONTACTAME
         </span>
 
-        <div className='flex flex-col text-center shadow-2xl lg:px-32'>
+        <div className='flex flex-col text-center shadow-2xl lg:px-32 dark:bg-third'>
           <form ref={form} onSubmit={sendEmail} className='flex flex-col p-6 items-center'>
             <input
               type="text"
@@ -110,7 +110,7 @@ export const Formulario = () => {
               name='user_name'
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
-              className='bg-primary font-roboto my-3 placeholder-quarter font-bold w-60 p-2 outline-none shadow-sm'
+              className='bg-primary font-roboto my-3 placeholder-quarter font-bold w-60 p-2 outline-none shadow-sm dark:bg-sexto dark:text-primary dark:placeholder-primary'
             />
             {errorNombre && <span className="text-red-500 text-xs">Por favor, ingresa un nombre válido.</span>}
             <input
@@ -119,7 +119,7 @@ export const Formulario = () => {
               name='user_email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className='bg-primary font-roboto my-3 placeholder-quarter w-60 p-2 outline-none shadow-sm'
+              className='bg-primary font-roboto my-3 placeholder-quarter w-60 p-2 outline-none shadow-sm dark:bg-sexto dark:text-primary dark:placeholder-primary'
             />
              {errorEmail && <span className="text-red-500 text-xs">Por favor, ingresa un email válido.</span>}
             <textarea
@@ -127,14 +127,14 @@ export const Formulario = () => {
               name='message'
               value={mensaje}
               onChange={(e) => setMensaje(e.target.value)}
-              className='bg-primary font-roboto my-3 placeholder-quarter w-60 p-2 outline-none shadow-sm resize-none'
+              className='bg-primary font-roboto my-3 placeholder-quarter w-60 p-2 outline-none shadow-sm resize-none dark:bg-sexto dark:text-primary dark:placeholder-primary'
             ></textarea>
             {errorMensaje && <span className="text-red-500 text-xs">Por favor, ingresa un mensaje válido.</span>}
 
             <input
               type="Submit"
               value='Enviar'
-              className='bg-third w-20 my-5 text-center items-center text-primary font-roboto p-3 font-semibold hover:bg-primary hover:text-third transition-all duration-300 lg:w-32'
+              className='bg-third w-20 my-5 text-center items-center text-primary font-roboto p-3 font-semibold hover:bg-primary hover:text-third transition-all duration-300 lg:w-32 dark:bg-sexto dark:text-primary dark:hover:bg-primary dark:hover:text-third'
             />
 
           </form>

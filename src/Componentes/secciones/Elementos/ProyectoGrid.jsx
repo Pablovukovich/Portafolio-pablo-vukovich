@@ -16,8 +16,8 @@ export const ProyectoGrid = ({proyectos}) => {
   return (
     <>
      <div className='grid grid-cols-1  sm:grid-cols-3 gap-3 '>
-          <div className='bg-primary col-span-1 sm:col-span-2 h-56 rounded-md hover:shadow-md showAnimacion group  relative'>
-            <div className='w-full h-full rounded-md relative overflow-hidden '>
+          <div className='bg-primary col-span-1 sm:col-span-2 h-56 rounded-md hover:shadow-md showAnimacion group  relative dark:bg-sexto'>
+            <div className='w-full h-full rounded-md relative overflow-hidden  '>
               <img src="/p-blog4.png" alt="blog knews" className='w-full h-full object-cover rounded-md absolute top-0 right-0 group-hover:blur-sm' />
                   <div className='absolute h-full w-full bg-third/50 flex flex-col  items-start -bottom-64 group-hover:-bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 '>
                     <h1 className='text-primary mx-5 my-3 text-2xl font-roboto font-bold'>K NEWS BLOG</h1>
@@ -44,7 +44,7 @@ export const ProyectoGrid = ({proyectos}) => {
 
             </div>
           </div>
-          <div className='bg-primary h-56  rounded-md  items-center hover:shadow-md bg-origin-border  showAnimacion group '>
+          <div className='bg-primary h-56  rounded-md  items-center hover:shadow-md bg-origin-border  showAnimacion group dark:bg-sexto '>
                 <div className='w-full h-full rounded-md relative overflow-hidden '>
                       
                   <img src="/p-pinkterest.png" alt="blog knews" className='w-full h-full object-cover rounded-md absolute top-0 right-0 group-hover:blur-sm '/>
@@ -70,7 +70,7 @@ export const ProyectoGrid = ({proyectos}) => {
                   </div>
             </div>          
           </div>
-          <div className='bg-primary col-span-1 sm:col-span-3   h-56 rounded-md hover:shadow-md showAnimacion group'>
+          <div className='bg-primary col-span-1 sm:col-span-3   h-56 rounded-md hover:shadow-md showAnimacion group dark:bg-sexto'>
                   <div className='w-full h-full rounded-md relative overflow-hidden '>
                       <img src="/p-random-music.png" alt="blog knews" className='w-full h-full object-cover rounded-md absolute top-0 right-0 group-hover:blur-sm '/>
                       <div className='absolute h-full w-full bg-third/50 flex flex-col  items-start -bottom-64 group-hover:-bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 '>

@@ -6,7 +6,7 @@ import { NotificacionSuccess } from './Elementos/NotificacionSuccess';
 export const Contacto = ({contactoSectionRef}) => {
   return (
     <>
-         <section ref={contactoSectionRef} className='flex flex-col  bg-second justify-center py-14 items-center' >
+         <section ref={contactoSectionRef} className='flex flex-col  bg-second justify-center py-14 items-center dark:bg-sexto' >
                 <SubTitulos titulo='Contacto'/>
                   <Formulario/> 
                 
