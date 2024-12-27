@@ -13,6 +13,7 @@ import { RandomMusic } from './Componentes/proyectos/RandomMusic'
 import { PlantillaProyecto } from './Componentes/proyectos/PlantillaProyecto'
 import { Knews } from './Componentes/proyectos/Knews'
 import { proyectos } from './data/proyectos.js';
+import { ThemeProvider } from './Componentes/ContexTheme.jsx'
 function App() {
 
   const sobreMiSectionRef = useRef();
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-    
+    <ThemeProvider>
     <Routes>
      
         {/* Ruta para la página principal */}
@@ -32,6 +33,8 @@ function App() {
           path="/" 
           element={
             <>
+            
+            
               <Header 
                 sobreMiSectionRef={sobreMiSectionRef}
                 skillsSectionRef={skillsSectionRef}
@@ -43,6 +46,7 @@ function App() {
               <Skills skillsSectionRef={skillsSectionRef} />
               <Proyectos proyectosSectionRef={proyectosSectionRef} proyectos={proyectos} />
               <Contacto contactoSectionRef={contactoSectionRef} />
+              
             </>
           } 
         />
@@ -57,7 +61,7 @@ function App() {
       </Routes>
       {/* Footer siempre visible */}
       <Footer volverArriba={volverArriba} />
-      
+      </ThemeProvider>
     
     </>
     
