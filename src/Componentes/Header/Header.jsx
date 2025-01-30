@@ -61,7 +61,7 @@ export const Header = ({sobreMiSectionRef, skillsSectionRef, proyectosSectionRef
 
           </div>
 
-          <div className=' hidden sm:flex justify-center items-center absolute  h-[50%] w-[50%] top-[27%] left-[50%]'>
+          <div className=' hidden sm:flex justify-center items-center absolute  h-[50%] w-[50%] top-[27%] left-[50%] '>
               <img src={logo} alt=""  className=''/>
             
           </div>

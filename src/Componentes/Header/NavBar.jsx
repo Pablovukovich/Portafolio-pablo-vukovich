@@ -19,7 +19,7 @@ export const NavBar = ({sobreMiSectionRef, skillsSectionRef, proyectosSectionRef
 
   return (
     <>
-        <nav ref={volverArriba}  className='flex item-center justify-around flex-wrap p-3 '>
+        <nav ref={volverArriba}  className='flex item-center justify-around flex-wrap p-3 z-10  '>
             <div >
                 <button onClick={handleCambiarTema}  className='  items-center text-center border  transition duration-500 ml-0 rounded-2xl p-1 lg:ml-10'> 
                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="currentColor" className="icon icon-tabler icons-tabler-filled icon-tabler-moon hover:text-third transition duration-500 ease-in-out text-quarter dark:hover:text-quinto ">
