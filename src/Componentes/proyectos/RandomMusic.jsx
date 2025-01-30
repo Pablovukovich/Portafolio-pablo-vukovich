@@ -34,11 +34,17 @@ export const RandomMusic = ({proyecto}) => {
                 </div>
                 <div className='w-[50%] h-16 px-5 py-2'>
                   <h3 className='dark:text-primary'>Tecnologias</h3>
-                  <div className='flex'>
-                  {proyecto.skills.map((skill, index) => (
-                    <img key={index} src={skill.src} alt={skill.alt} className='w-16 h-16 my-1  '  />
-                  ))}
-                  </div>
+                  <div className="flex">
+              {proyecto.skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-center w-20 h-16 my-1 text-xl text-quinto"
+                >
+                  {<skill.icon/>}
+                  <span className="text-sm mt-2">{skill.name}</span>
+                </div>
+              ))}
+            </div>
                 </div>
                 <div className='w-[50%] h-16 px-5 py-2  my-8'>
                   <h3 className='dark:text-primary'>Repositorio</h3>

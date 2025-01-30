@@ -1,12 +1,13 @@
 import React from 'react'
 import { NavBar } from './NavBar'
-import { Logo } from './Logo'
+import logo from '../../../public/logo .png'
+
 import resume from '../../assets/cv-pablo-vukovich.pdf'
 
 export const Header = ({sobreMiSectionRef, skillsSectionRef, proyectosSectionRef, contactoSectionRef, volverArriba }) => {
   return (
      <>
-      <header   className=' flex  flex-col bg-gradient-to-b from-primary to-second h-screen  lg:relative  dark:bg-gradient-to-b dark:from-third dark:to-sexto'>
+      <header   className=' flex flex-col bg-gradient-to-b from-primary to-second h-screen  lg:relative  dark:bg-gradient-to-b dark:from-third dark:to-sexto '>
         
          
         <NavBar 
@@ -17,10 +18,12 @@ export const Header = ({sobreMiSectionRef, skillsSectionRef, proyectosSectionRef
             volverArriba={volverArriba}
             
         />
-        <div className='m-auto text-center items-center h-auto p-14 text-wrap lg:flex lg:flex-col lg:absolute lg:top-64 lg:left-44 '>
+       
+
+        <div className='m-auto text-center justify-center items-center h-auto p-14 text-wrap lg:flex lg:flex-col lg:absolute lg:top-64 lg:left-44  '>
             <h1 className='font-bold text-4xl font-roboto text-third lg:text-6xl dark:text-primary'>PABLO VUKOVICH</h1>
             <p className='-tracking-tighter text-2xl uppercase font-robotoMono lg:text-4xl dark:text-primary  '>DEVELOPER</p>
-             <Logo/>   
+               
           <div className='flex justify-around  my-3 p-5 lg:justify-between  '>
 
           <a href="https://www.linkedin.com/in/pablo-vukovich/"   className='hover:animate-bounce transition-all duration-700 ease-in  lg:mx-5 ' target="_blank">
@@ -52,9 +55,19 @@ export const Header = ({sobreMiSectionRef, skillsSectionRef, proyectosSectionRef
 
           </a>
 
+
           </div>
 
-        </div>
+
+          </div>
+
+          <div className=' hidden sm:flex justify-center items-center absolute  h-[50%] w-[50%] top-[27%] left-[50%]'>
+              <img src={logo} alt=""  className=''/>
+            
+          </div>
+      
+      
+
 
         
 

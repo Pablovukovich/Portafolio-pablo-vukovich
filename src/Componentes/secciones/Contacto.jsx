@@ -1,14 +1,13 @@
 import React from 'react';
 import { SubTitulos } from './Elementos/SubTitulos';
-import { Formulario } from './Elementos/Formulario';
-import { NotificacionSuccess } from './Elementos/NotificacionSuccess';
+import ContactoCard from './Elementos/ContactoCard';
 
 export const Contacto = ({contactoSectionRef}) => {
   return (
     <>
          <section ref={contactoSectionRef} className='flex flex-col  bg-second justify-center py-14 items-center dark:bg-sexto' >
                 <SubTitulos titulo='Contacto'/>
-                  <Formulario/> 
+                  <ContactoCard/>
                 
          </section>
     
