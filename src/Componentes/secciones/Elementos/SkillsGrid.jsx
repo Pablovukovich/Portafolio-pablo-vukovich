@@ -2,6 +2,7 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaJava, FaDatabase, FaFigma, FaGitAlt  } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
 import SkillCard from "./SkillCard";
 const SkillsGrid = () => {
   return (
@@ -27,6 +28,7 @@ const SkillsGrid = () => {
           <div className="grid grid-cols-3 gap-4">
             <SkillCard name="Node.js" color="#8E4256" icon={<FaNodeJs />} />
             <SkillCard name="Express" color="#8E4256" icon={<FaNodeJs />} />
+            <SkillCard name="MongoDB" color="#8E4256" icon={<SiMongodb />} />
             <SkillCard name="Java" color="#8E4256" icon={<FaJava />} />
             <SkillCard name="Postgres" color="#8E4256" icon={<FaDatabase />} />
           </div>
