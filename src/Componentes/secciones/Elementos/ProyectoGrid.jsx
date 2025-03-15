@@ -22,9 +22,14 @@ export const ProyectoGrid = ({ proyectos }) => {
               className="w-full h-full object-cover rounded-md absolute top-0 right-0 group-hover:blur-sm"
             />
             <div className="absolute h-full w-full bg-third/50 flex flex-col items-start -bottom-64 group-hover:-bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <h1 className="text-primary mx-5 my-2 text-2xl font-roboto font-bold">
-                {proyecto.titulo}
-              </h1>
+           <div className="flex flex-col sm:flex-row items-center justify-center text-center">
+            
+            <h1 className="text-primary mx-5 my-1 text-2xl font-roboto font-bold">
+              {proyecto.titulo}
+            </h1>
+            <p className="text-white my-1 font-light text-sm">Estado:  {proyecto.estado.state_project} </p>
+            <proyecto.estado.icon_state className={`mx-2 ${proyecto.estado.color}`}/>
+           </div>
               <div className="overflow-y-scroll max-h-20 sm:overflow-y-hidden"> 
                 <p className="text-second mx-5  text-sm">
                   {proyecto.descripcion}
@@ -43,18 +48,21 @@ export const ProyectoGrid = ({ proyectos }) => {
                     />
                   ))}
                 </div>
-              </div>
+              </div >
               <Link
                 to={proyecto.link}
                 onClick={scrollToTop}
-                className="bg-primary mx-5 my-2 p-2 hover:bg-primary hover:text-second absolute bottom-0"
+                className="bg-primary mx-5 my-2 p-2 hover:bg-primary hover:text-second absolute bottom-0 "
               >
                 Ver más...
               </Link>
+             
             </div>
           </div>
         </div>
       ))}
+      
     </div>
   );
+  
 };

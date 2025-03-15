@@ -71,13 +71,13 @@ export const BlogKnews = ({ proyecto }) => {
             </span>
             <p className=" dark:text-quarter">
               <span className="font-medium dark:text-primary">Frontend:</span>{" "}
-              Desarrollado con React y estilizado con Tailwind CSS para
+              Desarrollado con Nextjs y estilizado con Tailwind CSS para
               garantizar una interfaz intuitiva y una experiencia de usuario
               fluida. <br />
               <span className="font-medium dark:text-primary">
                 Backend:
               </span>{" "}
-              Utiliza Node.js y MongoDB para un backend escalable y eficiente,
+              Utiliza Express y MongoDB para un backend escalable y eficiente,
               permitiendo una administración rápida y segura de los datos, tales
               como publicaciones, comentarios y perfiles de usuario
             </p>
