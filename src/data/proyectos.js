@@ -25,7 +25,7 @@ export const proyectos = [
       { icon: SiExpress , name: "Express" }
 
     ],
-    github: "#",
+    github: "https://github.com/Pablovukovich/blog-knews",
     link: "/blogKnews-p/1"
   },
   {
